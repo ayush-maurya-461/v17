@@ -1,0 +1,26 @@
+.container{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(215, 143, 143);
+    padding: 5%;
+    position: relative;
+}
+.outer{
+    background-color: white;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    border-radius: 10%;
+}
+
+h3{
+    position: absolute;
+    left: 50%;
+    z-index: 20;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+*{
+    print-color-adjust: exact;
+}

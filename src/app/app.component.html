@@ -1,0 +1,13 @@
+<ul>
+    <li><button (click)="setModule('ngx-print')">NGX PRINT</button></li>
+    <li><button (click)="setModule('signals')">SIGNALS</button></li>
+    <li><button (click)="setModule('localize')">LOCALIZE</button></li>
+    <li><button (click)="setModule('rxjs')">RXJS</button></li>
+    <li><button (click)="setModule('trackby')">TRACKBY</button></li>
+</ul>
+
+<app-ngx-print-example *ngIf="activeModule=='ngx-print'"></app-ngx-print-example>
+<app-signals *ngIf="activeModule=='signals'"></app-signals>
+<app-localize *ngIf="activeModule=='localize'"></app-localize>
+<app-rxjs *ngIf="activeModule=='rxjs'"></app-rxjs>
+<app-track-by *ngIf="activeModule=='trackby'"></app-track-by>

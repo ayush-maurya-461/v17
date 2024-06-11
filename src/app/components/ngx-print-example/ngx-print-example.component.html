@@ -1,0 +1,27 @@
+<!-- <app-signals></app-signals> -->
+
+<div id="print-section">
+    <!-- <div class="container" #html>
+        <div class="outer">
+            <div class="inner"></div>
+        </div>
+        <h3>Dummy Text</h3>
+    </div> -->
+    <div class="form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </div>      
+    </div>
+</div>
+
+<!-- <button [printStyle]="{'div': { 'height': '200px','width': '200px', 'background-color': 'rgb(215, 143, 143)','padding': '5%','position': 'relative'}}" printSectionId="print-section" [useExistingCss]="false" ngxPrint> download</button> -->
+
+<button
+  styleSheetFile="./app.component.css"
+  printSectionId="print-section"
+  [useExistingCss]="true"
+  [previewOnly]="false"
+  printTitle="Hello"
+  [closeWindow]="true"
+  ngxPrint>print</button>

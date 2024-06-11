@@ -1,0 +1,13 @@
+<div>
+    <button (click)="addItem()">Add Item</button>
+    <button (click)="changeItem()">Change Item</button>
+    <button (click)="removeItem()">Remove Item</button>
+  </div>
+  <p>---------------------------------------------------------</p>
+  <ul>
+    <li *ngFor="let item of items; trackBy: trackById">
+      {{ item.id }} - {{ item.name }}
+    </li>
+  </ul>
+
+  
